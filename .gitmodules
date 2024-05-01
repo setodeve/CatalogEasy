@@ -1,6 +1,8 @@
-[submodule "front"]
-	path = front
+[submodule "frontend"]
+	path = frontend
 	url = https://github.com/setodeve/CatalogEasy-frontend
-[submodule "back"]
-	path = back
+	branch = main
+[submodule "backend"]
+	path = backend
 	url = https://github.com/setodeve/CatalogEasy-backend
+	branch = main
