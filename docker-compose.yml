@@ -1,0 +1,47 @@
+version: '3.8'
+
+services:
+  db:
+    container_name: db
+    image: mysql:8.3
+    volumes:
+      - mysql-data:/var/lib/mysql
+      - /tmp/dockerdir:/etc/mysql/conf.d/
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+    ports:
+      - 3307:3307
+  backend:
+    container_name: backend
+    build: 
+      context: ./CatalogEasy-backend/
+      dockerfile: Dockerfile
+    stdin_open: true
+    tty: true
+    command: bash -c "rm -rf tmp/pids/server.pid && bundle exec rails s -p 8080 -b '0.0.0.0'"
+    volumes:
+      - ./CatalogEasy-backend:/app
+    ports:
+      - 8080:8080
+    depends_on:
+      - db
+    environment:
+      TZ: Asia/Tokyo
+  frontend:
+    container_name: frontend
+    build:
+      context: ./CatalogEasy-frontend/
+      dockerfile: Dockerfile
+
+    volumes:
+      - ./CatalogEasy-frontend/src:/app/src
+      - ./CatalogEasy-frontend/public:/app/public
+    restart: always
+    ports:
+      - 3000:3000
+    depends_on:
+      - 'backend'
+    links:
+      - backend
+volumes:
+  mysql-data:

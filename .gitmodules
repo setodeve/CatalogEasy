@@ -1,0 +1,6 @@
+[submodule "CatalogEasy-backend"]
+  path = CatalogEasy-backend
+  url = https://github.com/setodeve/CatalogEasy-backend
+[submodule "CatalogEasy-frontend"]
+  path = CatalogEasy-frontend
+  url = https://github.com/setodeve/CatalogEasy-frontend
