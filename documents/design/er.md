@@ -1,60 +1,87 @@
 ```mermaid
 erDiagram
-    User ||--o{ Catalog : "has many"
-    User ||--o{ Product : "has many"
-    User ||--o{ ProductImage : "has many"
-    Template ||--o{ CatalogSection : "has many"
-    Catalog ||--o{ CatalogSection : "has many"
-    Product ||--o{ CatalogSection : "has many"
-    Product ||--o{ ImageAssignment : "has many"
-    ProductImage ||--o{ ImageAssignment : "has many"
-    
-    User {
-        bigint id PK "ユーザーID"
-        string name "ユーザー名"
-        string email "メールアドレス"
-        string hashed_password "パスワード"
+    USERS {
+        bigint id PK "Primary Key"
+        string provider "Default: email"
+        string uid "Default: ''"
+        string encrypted_password "Default: ''"
+        string reset_password_token
+        datetime reset_password_sent_at
+        boolean allow_password_change "Default: false"
+        datetime remember_created_at
+        string confirmation_token
+        datetime confirmed_at
+        datetime confirmation_sent_at
+        string unconfirmed_email
+        string name
+        string nickname
+        string image
+        string email
+        text tokens
+        datetime created_at
+        datetime updated_at
     }
-    
-    Catalog {
-        bigint id PK "カタログID"
-        string name "カタログ名"
-        bigint user_id FK "ユーザーID"
+
+    PRODUCTS {
+        bigint id PK "Primary Key"
+        string name
+        string size
+        bigint trade_price
+        bigint retail_price
+        string remark
+        datetime created_at
+        datetime updated_at
+        bigint user_id FK
     }
-    
-    Product {
-        bigint id PK "製品ID"
-        string name "製品名"
-        string size "サイズ"
-        bigint trade_price "卸価格"
-        bigint retail_price "小売価格"
-        string remark "備考"
-        bigint user_id FK "ユーザーID"
+
+    CATALOGS {
+        bigint id PK "Primary Key"
+        string name
+        bigint user_id FK
+        datetime created_at
+        datetime updated_at
     }
-    
-    ProductImage {
-        bigint id PK "画像ID"
-        bigint user_id FK "ユーザーID"
+
+    PRODUCT_IMAGES {
+        bigint id PK "Primary Key"
+        datetime created_at
+        datetime updated_at
+        bigint user_id FK
     }
-    
-    Template {
-        bigint id PK "テンプレートID"
-        string content "内容"
+
+    IMAGE_ASSIGNMENTS {
+        bigint id PK "Primary Key"
+        bigint product_id FK
+        bigint product_image_id FK
+        string image_key
+        datetime created_at
+        datetime updated_at
     }
-    
-    CatalogSection {
-        bigint id PK "カタログセクションID"
-        bigint template_id FK "テンプレートID"
-        bigint catalog_id FK "カタログID"
-        bigint product_id FK "製品ID"
-        bigint page_number "ページ番号"
-        bigint page_place_number "ページ内位置"
+
+    CATALOG_SECTIONS {
+        bigint id PK "Primary Key"
+        bigint template_id FK
+        bigint catalog_id FK
+        bigint product_id FK
+        bigint page_number
+        bigint page_place_number
+        datetime created_at
+        datetime updated_at
     }
-    
-    ImageAssignment {
-        bigint id PK "イメージ割当ID"
-        bigint product_id FK "製品ID"
-        bigint product_image_id FK "画像ID"
-        string image_key "画像キー"
+
+    TEMPLATES {
+        bigint id PK "Primary Key"
+        string content
+        datetime created_at
+        datetime updated_at
     }
+
+    USERS ||--o{ PRODUCTS : "has many"
+    USERS ||--o{ CATALOGS : "has many"
+    USERS ||--o{ PRODUCT_IMAGES : "has many"
+    CATALOGS ||--o{ CATALOG_SECTIONS : "has many"
+    TEMPLATES ||--o{ CATALOG_SECTIONS : "has many"
+    PRODUCTS ||--o{ CATALOG_SECTIONS : "has many"
+    PRODUCTS ||--o{ IMAGE_ASSIGNMENTS : "has many"
+    PRODUCT_IMAGES ||--o{ IMAGE_ASSIGNMENTS : "has many"
 ```
