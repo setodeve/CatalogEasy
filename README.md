@@ -9,6 +9,7 @@
 
 ## オリジナルプロダクトの URL
 https://app.catalog-easy.com
+右上の「Guestでログイン」からゲストユーザーとしてご利用いただけます。
 
 ## TOPページ
 <img src="./documents/design/top.png" width="70%"></img>
@@ -29,49 +30,6 @@ https://app.catalog-easy.com
     - ECS Fargate、ECR、Amplify、RDS、ALB、Route53、ACM、S3
   - Mysql
   - Docker、Docker Compose 
-
-## 選定理由
-### 主要ライブラリ(フロントエンド)
-  - Yamada UI
-    - シンプルなUIを実現できるため
-  - React Hook Form
-    - 動的なフォームのバリデーションとフォームの状態管理を簡単に実装できるため
-  - React-Draggable
-    - ドラッグ&ドロップ機能を簡単に実装できるため
-  - Axios
-    - リクエスト前の前処理が簡単にできるため
-  - Prettier、ESLint
-    - コード品質担保のため
-  - lefthook
-    - コミット前に自動で静的解析ツールを走らせるため
-  
-### 主要gem(バックエンド)
-  - devise_token_auth
-    - 小規模アプリで、ユーザー認証が容易であるトークン認証を採用。
-  - bycrypt
-    - クライアント側でURLを暗号化させるため
-  - rack-cors
-    - APIの呼び出し時のCORS対応のため
-  - rubocop
-    - コード品質担保のため
- 
-### 主要AWSサービス(インフラ)
-- ECS Fargate
-  - Rails APIのデプロイのために使用。Docker開発におけるデプロイ負担の軽減のために選択。
-- ECR
-  - Rails API、Nginxコンテナイメージ保存のために使用。
-- Amplify
-  - Next.jsをデプロイするために使用。デプロイの容易さや、Vercelに比べ、AWSとのサービスとの連携が簡単にできるため選択。
-- S3
-  - 画像アップロードのために使用。VPCのエンドポイントからアクセスできるように設定。
-- RDS(Mysql)
-  - Rails APIのデータ保存のために使用。(マルチAZ)必要に応じてスケーリングが容易なため選択。
-- ALB
-  - ECS Fargateへのトラフィック分散を行うために使用。
-- Route53
-  - Rails、Next.jsのアプリケーションの独自ドメイン設定のために使用。
-- ACM
-  - SSL化のために使用。
 
 ## 機能一覧
 ### ユーザー利用機能
@@ -100,6 +58,53 @@ https://app.catalog-easy.com
     - Dockerを用いたデプロイ効率化
     - UIコンポーネント(Yamada UI)を用いた開発の簡略化
     - Lefthookを用いたコミット前の静的解析ツール実行
+
+
+## 選定理由
+### 主要ライブラリ(フロントエンド)
+  - Yamada UI
+    - シンプルなUIを実現できるため
+  - React Hook Form
+    - 動的なフォームのバリデーションとフォームの状態管理を簡単に実装できるため
+  - React-Draggable
+    - ドラッグ&ドロップ機能を簡単に実装できるため
+  - Axios
+    - リクエスト前の前処理が簡単にできるため
+  - Prettier、ESLint
+    - コード品質担保のため
+  - lefthook
+    - コミット前に自動で静的解析ツールを走らせるため
+  
+### 主要gem(バックエンド)
+  - devise_token_auth
+    - 小規模アプリで、ユーザー認証が容易であるトークン認証を採用。
+  - bycrypt
+    - クライアント側でURLを暗号化させるため
+  - rack-cors
+    - APIの呼び出し時のCORS対応のため
+  - rubocop
+    - コード品質担保のため
+ 
+### 主要AWSサービス(インフラ)
+- ECS Fargate
+  - Rails APIのデプロイのために使用。Docker開発におけるデプロイ負担の軽減のため
+- ECR
+  - Rails API、Nginxコンテナイメージ保存のため
+- Amplify
+  - Next.jsをデプロイするために使用。デプロイの容易さや、Vercelに比べ、AWSとのサービスとの連携が簡単にできるため
+- S3
+  - 画像アップロードのため。VPCのエンドポイントからアクセスできるように設定
+- RDS(Mysql)
+  - Rails APIのデータ保存のために使用。(マルチAZ)必要に応じてスケーリングが容易なため
+- ALB
+  - ECS Fargateへのトラフィック分散を行うため
+- Route53
+  - Rails、Next.jsのアプリケーションの独自ドメイン設定のため
+- ACM
+  - SSL化のため
+
+## インフラ構成図
+<img src="./documents/design/arch.svg" width="70%"></img>
 
 ## ER 図
 ```mermaid
@@ -190,8 +195,6 @@ erDiagram
     PRODUCT_IMAGES ||--o{ IMAGE_ASSIGNMENTS : "has many"
 ```
 
-## インフラ構成図
-<img src="./documents/design/arch.svg" width="70%"></img>
 
 ## 今後アップデートしたい内容
   - fetch使用部分の全面サーバーコンポーネント化
@@ -199,4 +202,5 @@ erDiagram
   - カタログ編集機能
   - テンプレート機能
   - 過去登録した商品情報からカタログ作成機能
+  - カタログ名編集機能
 
