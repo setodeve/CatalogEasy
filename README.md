@@ -9,6 +9,7 @@
 
 ## オリジナルプロダクトの URL
 https://app.catalog-easy.com
+
 右上の「Guestでログイン」からゲストユーザーとしてご利用いただけます。
 
 ## TOPページ
@@ -91,7 +92,7 @@ https://app.catalog-easy.com
 - ECR
   - Rails API、Nginxコンテナイメージ保存のため
 - Amplify
-  - Next.jsをデプロイするために使用。デプロイの容易さや、Vercelに比べ、AWSとのサービスとの連携が簡単にできるため
+  - Next.jsをデプロイするために使用。デプロイの容易さや、Vercelに比べ、AWS内のサービスとの連携が簡単にできるため
 - S3
   - 画像アップロードのため。VPCのエンドポイントからアクセスできるように設定
 - RDS(Mysql)
