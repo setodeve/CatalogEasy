@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="NSt4wMtNX6ZRTYNoDcRp" name="ページ1">
-        <mxGraphModel dx="456" dy="441" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#FFFFFF" math="0" shadow="0">
+        <mxGraphModel dx="563" dy="727" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#FFFFFF" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -40,22 +40,22 @@
                 <mxCell id="57" value="&lt;span style=&quot;color: rgb(84, 91, 100); font-family: &amp;quot;Amazon Ember&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Roboto, Arial, sans-serif; text-align: start;&quot;&gt;10.0.0.0/16&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;" parent="56" vertex="1">
                     <mxGeometry x="422" y="409" width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="178" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#4D27AA;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.application_load_balancer;" vertex="1" parent="56">
+                <mxCell id="178" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#4D27AA;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.application_load_balancer;" parent="56" vertex="1">
                     <mxGeometry x="212" y="132" width="52" height="52" as="geometry"/>
                 </mxCell>
-                <mxCell id="193" value="&lt;font face=&quot;Amazon Ember, Helvetica Neue, Roboto, Arial, sans-serif&quot; color=&quot;#545b64&quot; style=&quot;font-size: 12px;&quot;&gt;ALB&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;strokeWidth=2;fontSize=12;" vertex="1" parent="56">
+                <mxCell id="193" value="&lt;font face=&quot;Amazon Ember, Helvetica Neue, Roboto, Arial, sans-serif&quot; color=&quot;#545b64&quot; style=&quot;font-size: 12px;&quot;&gt;ALB&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;strokeWidth=2;fontSize=12;" parent="56" vertex="1">
                     <mxGeometry x="207.5" y="179" width="61" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="58" value="Private subnet" style="points=[[0,0],[0.25,0],[0.5,0],[0.75,0],[1,0],[1,0.25],[1,0.5],[1,0.75],[1,1],[0.75,1],[0.5,1],[0.25,1],[0,1],[0,0.75],[0,0.5],[0,0.25]];outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;container=1;pointerEvents=0;collapsible=0;recursiveResize=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_security_group;grStroke=0;strokeColor=#147EBA;fillColor=#E6F2F8;verticalAlign=top;align=left;spacingLeft=30;fontColor=#147EBA;dashed=0;" parent="1" vertex="1">
                     <mxGeometry x="217" y="597" width="150" height="151" as="geometry"/>
                 </mxCell>
                 <mxCell id="59" value="" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;gradientColor=#4D72F3;gradientDirection=north;fillColor=#3334B9;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.rds;" parent="58" vertex="1">
-                    <mxGeometry x="46" y="49.5" width="52" height="52" as="geometry"/>
+                    <mxGeometry x="46" y="52" width="52" height="52" as="geometry"/>
                 </mxCell>
                 <mxCell id="60" value="&lt;span style=&quot;color: rgb(84, 91, 100); font-family: &amp;quot;Amazon Ember&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Roboto, Arial, sans-serif; text-align: start;&quot;&gt;10.0.11.0/24&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;" parent="58" vertex="1">
                     <mxGeometry x="87" y="121" width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="186" value="&lt;font face=&quot;Amazon Ember, Helvetica Neue, Roboto, Arial, sans-serif&quot; color=&quot;#545b64&quot; style=&quot;font-size: 12px;&quot;&gt;RDS&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;strokeWidth=2;fontSize=12;" vertex="1" parent="58">
+                <mxCell id="186" value="&lt;font face=&quot;Amazon Ember, Helvetica Neue, Roboto, Arial, sans-serif&quot; color=&quot;#545b64&quot; style=&quot;font-size: 12px;&quot;&gt;RDS&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;strokeWidth=2;fontSize=12;" parent="58" vertex="1">
                     <mxGeometry x="41.5" y="98" width="61" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="62" value="Public subnet" style="points=[[0,0],[0.25,0],[0.5,0],[0.75,0],[1,0],[1,0.25],[1,0.5],[1,0.75],[1,1],[0.75,1],[0.5,1],[0.25,1],[0,1],[0,0.75],[0,0.5],[0,0.25]];outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;container=1;pointerEvents=0;collapsible=0;recursiveResize=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_security_group;grStroke=0;strokeColor=#248814;fillColor=#E9F3E6;verticalAlign=top;align=left;spacingLeft=30;fontColor=#248814;dashed=0;" parent="1" vertex="1">
@@ -76,13 +76,16 @@
                 <mxCell id="67" value="&lt;span style=&quot;color: rgb(84, 91, 100); font-family: &amp;quot;Amazon Ember&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Roboto, Arial, sans-serif; text-align: start;&quot;&gt;10.0.10.0/24&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;" parent="66" vertex="1">
                     <mxGeometry x="87" y="120" width="60" height="30" as="geometry"/>
                 </mxCell>
+                <mxCell id="199" value="&lt;font face=&quot;Amazon Ember, Helvetica Neue, Roboto, Arial, sans-serif&quot; color=&quot;#545b64&quot; style=&quot;font-size: 12px;&quot;&gt;RDS&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;strokeWidth=2;fontSize=12;" vertex="1" parent="66">
+                    <mxGeometry x="40.5" y="97" width="61" height="30" as="geometry"/>
+                </mxCell>
                 <mxCell id="69" value="Public subnet" style="points=[[0,0],[0.25,0],[0.5,0],[0.75,0],[1,0],[1,0.25],[1,0.5],[1,0.75],[1,1],[0.75,1],[0.5,1],[0.25,1],[0,1],[0,0.75],[0,0.5],[0,0.25]];outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;container=1;pointerEvents=0;collapsible=0;recursiveResize=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_security_group;grStroke=0;strokeColor=#248814;fillColor=#E9F3E6;verticalAlign=top;align=left;spacingLeft=30;fontColor=#248814;dashed=0;" parent="1" vertex="1">
                     <mxGeometry x="457" y="438" width="150" height="150" as="geometry"/>
                 </mxCell>
                 <mxCell id="70" value="&lt;span style=&quot;color: rgb(84, 91, 100); font-family: &amp;quot;Amazon Ember&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Roboto, Arial, sans-serif; text-align: start;&quot;&gt;10.0.0.0/24&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;fillStyle=auto;" parent="69" vertex="1">
                     <mxGeometry x="87" y="123.5" width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="189" value="&lt;font face=&quot;Amazon Ember, Helvetica Neue, Roboto, Arial, sans-serif&quot; color=&quot;#545b64&quot; style=&quot;font-size: 12px;&quot;&gt;ECS&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;strokeWidth=2;fontSize=12;" vertex="1" parent="69">
+                <mxCell id="189" value="&lt;font face=&quot;Amazon Ember, Helvetica Neue, Roboto, Arial, sans-serif&quot; color=&quot;#545b64&quot; style=&quot;font-size: 12px;&quot;&gt;ECS&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;strokeWidth=2;fontSize=12;" parent="69" vertex="1">
                     <mxGeometry x="7" y="103" width="61" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="71" value="" style="edgeStyle=none;html=1;strokeColor=#000000;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="130" target="59" edge="1">
@@ -156,15 +159,6 @@
                 </mxCell>
                 <mxCell id="148" value="" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;gradientColor=#F54749;gradientDirection=north;fillColor=#C7131F;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.amplify;" parent="1" vertex="1">
                     <mxGeometry x="385.75" y="247" width="40.5" height="40.5" as="geometry"/>
-                </mxCell>
-                <mxCell id="153" value="" style="endArrow=classic;html=1;strokeColor=#000000;fontColor=#000000;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="135" target="59" edge="1">
-                    <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="422" y="653.281393442623" as="sourcePoint"/>
-                        <mxPoint x="491.5" y="652.9965573770493" as="targetPoint"/>
-                        <Array as="points">
-                            <mxPoint x="528" y="673"/>
-                        </Array>
-                    </mxGeometry>
                 </mxCell>
                 <mxCell id="154" value="" style="endArrow=classic;html=1;strokeColor=#FF33FF;fontColor=#000000;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;fillColor=#d80073;" parent="1" source="131" target="130" edge="1">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -251,26 +245,41 @@
                 <mxCell id="163" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#4D27AA;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.endpoint;" parent="1" vertex="1">
                     <mxGeometry x="143" y="497.25" width="47.5" height="47.5" as="geometry"/>
                 </mxCell>
-                <mxCell id="182" value="&lt;font face=&quot;Amazon Ember, Helvetica Neue, Roboto, Arial, sans-serif&quot; color=&quot;#545b64&quot; style=&quot;font-size: 12px;&quot;&gt;Amplify&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;strokeWidth=2;fontSize=12;" vertex="1" parent="1">
+                <mxCell id="182" value="&lt;font face=&quot;Amazon Ember, Helvetica Neue, Roboto, Arial, sans-serif&quot; color=&quot;#545b64&quot; style=&quot;font-size: 12px;&quot;&gt;Amplify&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;strokeWidth=2;fontSize=12;" parent="1" vertex="1">
                     <mxGeometry x="377" y="282" width="61" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="183" value="&lt;font face=&quot;Amazon Ember, Helvetica Neue, Roboto, Arial, sans-serif&quot; color=&quot;#545b64&quot; style=&quot;font-size: 12px;&quot;&gt;Route53&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;strokeWidth=2;fontSize=12;" vertex="1" parent="1">
+                <mxCell id="183" value="&lt;font face=&quot;Amazon Ember, Helvetica Neue, Roboto, Arial, sans-serif&quot; color=&quot;#545b64&quot; style=&quot;font-size: 12px;&quot;&gt;Route53&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;strokeWidth=2;fontSize=12;" parent="1" vertex="1">
                     <mxGeometry x="487" y="330" width="61" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="184" value="&lt;font face=&quot;Amazon Ember, Helvetica Neue, Roboto, Arial, sans-serif&quot; color=&quot;#545b64&quot; style=&quot;font-size: 12px;&quot;&gt;ACM&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;strokeWidth=2;fontSize=12;" vertex="1" parent="1">
+                <mxCell id="184" value="&lt;font face=&quot;Amazon Ember, Helvetica Neue, Roboto, Arial, sans-serif&quot; color=&quot;#545b64&quot; style=&quot;font-size: 12px;&quot;&gt;ACM&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;strokeWidth=2;fontSize=12;" parent="1" vertex="1">
                     <mxGeometry x="546" y="330" width="61" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="187" value="&lt;font face=&quot;Amazon Ember, Helvetica Neue, Roboto, Arial, sans-serif&quot; color=&quot;#545b64&quot; style=&quot;font-size: 12px;&quot;&gt;S3&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;strokeWidth=2;fontSize=12;" vertex="1" parent="1">
+                <mxCell id="187" value="&lt;font face=&quot;Amazon Ember, Helvetica Neue, Roboto, Arial, sans-serif&quot; color=&quot;#545b64&quot; style=&quot;font-size: 12px;&quot;&gt;S3&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;strokeWidth=2;fontSize=12;" parent="1" vertex="1">
                     <mxGeometry x="49.63" y="541" width="61" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="188" value="&lt;font face=&quot;Amazon Ember, Helvetica Neue, Roboto, Arial, sans-serif&quot; color=&quot;#545b64&quot; style=&quot;font-size: 12px;&quot;&gt;ECS&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;strokeWidth=2;fontSize=12;" vertex="1" parent="1">
+                <mxCell id="188" value="&lt;font face=&quot;Amazon Ember, Helvetica Neue, Roboto, Arial, sans-serif&quot; color=&quot;#545b64&quot; style=&quot;font-size: 12px;&quot;&gt;ECS&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;strokeWidth=2;fontSize=12;" parent="1" vertex="1">
                     <mxGeometry x="223" y="544.75" width="61" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="190" value="&lt;font face=&quot;Amazon Ember, Helvetica Neue, Roboto, Arial, sans-serif&quot; color=&quot;#545b64&quot; style=&quot;font-size: 12px;&quot;&gt;ECR&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;strokeWidth=2;fontSize=12;" vertex="1" parent="1">
+                <mxCell id="190" value="&lt;font face=&quot;Amazon Ember, Helvetica Neue, Roboto, Arial, sans-serif&quot; color=&quot;#545b64&quot; style=&quot;font-size: 12px;&quot;&gt;ECR&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;strokeWidth=2;fontSize=12;" parent="1" vertex="1">
                     <mxGeometry x="678.5" y="375" width="61" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="191" value="&lt;font face=&quot;Amazon Ember, Helvetica Neue, Roboto, Arial, sans-serif&quot; color=&quot;#545b64&quot; style=&quot;font-size: 12px;&quot;&gt;Github Action&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;strokeWidth=2;fontSize=12;" vertex="1" parent="1">
+                <mxCell id="191" value="&lt;font face=&quot;Amazon Ember, Helvetica Neue, Roboto, Arial, sans-serif&quot; color=&quot;#545b64&quot; style=&quot;font-size: 12px;&quot;&gt;Github Action&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;strokeWidth=2;fontSize=12;" parent="1" vertex="1">
                     <mxGeometry x="798" y="370" width="61" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="196" value="" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;gradientColor=#4D72F3;gradientDirection=north;fillColor=#3334B9;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.rds;" vertex="1" parent="1">
+                    <mxGeometry x="502" y="646.5" width="52" height="52" as="geometry"/>
+                </mxCell>
+                <mxCell id="197" value="" style="endArrow=classic;html=1;strokeColor=#000000;fontColor=#000000;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="135" target="59">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="369.5" y="625.2943902439024" as="sourcePoint"/>
+                        <mxPoint x="440.5" y="623.9956097560976" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="198" value="" style="endArrow=classic;html=1;strokeColor=#000000;fontColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="59" target="196">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="512" y="528.75" as="sourcePoint"/>
+                        <mxPoint x="325" y="682.5" as="targetPoint"/>
+                    </mxGeometry>
                 </mxCell>
             </root>
         </mxGraphModel>
