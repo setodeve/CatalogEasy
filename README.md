@@ -99,7 +99,7 @@ https://app.catalog-easy.com
     - Amplifyによる自動デプロイ
     - Dockerを用いたデプロイ効率化
     - UIコンポーネント(Yamada UI)を用いた開発の簡略化
-    - Lefthookを用いたコミット前の静的解析ツールの走行
+    - Lefthookを用いたコミット前の静的解析ツール実行
 
 ## ER 図
 ```mermaid
