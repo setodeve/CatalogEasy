@@ -6,6 +6,7 @@
 
 商品データと商品画像を登録することで簡単にカタログ作成ができます。
 </p>
+<img src="./documents/design/top.png" width="70%"></img>
 
 ## オリジナルプロダクトの URL 
 https://app.catalog-easy.com
@@ -16,9 +17,6 @@ https://app.catalog-easy.com
 ## Qiita記事
 このプロダクトを作成した背景を解説しています。
 https://qiita.com/keiswe/items/fa59444fdaac3f1be1b9
-
-## TOPページ
-<img src="./documents/design/top.png" width="70%"></img>
 
 ## 使用技術
 ### フロントエンド
