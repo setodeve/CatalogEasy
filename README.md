@@ -13,6 +13,10 @@ https://app.catalog-easy.com
 * 右上の「Guestでログイン」からゲストユーザーとしてサービスをお試しいただけます。
 * AM 1:00 ~ AM8:00(JST)はサービス停止しています。
 
+## Qiita記事
+このプロダクトを作成した背景を解説しています。
+https://qiita.com/keiswe/items/fa59444fdaac3f1be1b9
+
 ## TOPページ
 <img src="./documents/design/top.png" width="70%"></img>
 
