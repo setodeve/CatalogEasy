@@ -1,3 +1,6 @@
 [submodule "backend"]
 	path = backend
 	url = https://github.com/setodeve/CatalogEasy-backend.git
+[submodule "frontend"]
+	path = frontend
+	url = https://github.com/setodeve/CatalogEasy-frontend.git
