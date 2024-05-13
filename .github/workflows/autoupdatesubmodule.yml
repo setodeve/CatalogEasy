@@ -1,0 +1,27 @@
+name: Update Submodules
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # 毎日UTC0時に実行します。タイミングは必要に応じて調整してください。
+  workflow_dispatch:  # GitHubのUIから手動でトリガーできるようにします。
+
+jobs:
+  update-submodules:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0  # サブモジュールを含めた全ての履歴をフェッチする必要があります。
+
+      - name: Update submodules
+        run: |
+          git submodule update --init --recursive
+          git submodule update --remote
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name 'setodeve'
+          git config --global user.email '${{ secrets.USER_EMAIL }}'
+          git commit -am "fix: auto update submodules"
+          git push
