@@ -116,22 +116,9 @@ https://qiita.com/keiswe/items/fa59444fdaac3f1be1b9
 erDiagram
     USERS {
         bigint id PK "Primary Key"
-        string provider "Default: email"
-        string uid "Default: ''"
-        string encrypted_password "Default: ''"
-        string reset_password_token
-        datetime reset_password_sent_at
-        boolean allow_password_change "Default: false"
-        datetime remember_created_at
-        string confirmation_token
-        datetime confirmed_at
-        datetime confirmation_sent_at
-        string unconfirmed_email
-        string name
-        string nickname
-        string image
         string email
         text tokens
+        string encrypted_password "Default: ''"
         datetime created_at
         datetime updated_at
     }
