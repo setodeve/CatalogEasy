@@ -54,7 +54,6 @@ https://qiita.com/keiswe/items/fa59444fdaac3f1be1b9
     - Route53、ACMを使用した独自ドメイン、SSL化対応
     - トークンを利用した認証
     - プラウザ側でのURLの暗号化
-    - XSS、CSRF対策
 
   - 開発
     - 静的解析ツールを用いたコード品質担保
