@@ -23,7 +23,5 @@ jobs:
         run: |
           sudo git config --global user.name 'setodeve'
           git config --global user.email '${{ secrets.USER_EMAIL }}'
-          sudo git commit -am "fix: auto update submodules"
-          sudo git push
-          sudo git config --global --edit
-          sudo git commit --amend --reset-author
+          git commit -am "fix: auto update submodules"
+          git push
