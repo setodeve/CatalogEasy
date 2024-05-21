@@ -22,7 +22,7 @@ https://qiita.com/keiswe/items/fa59444fdaac3f1be1b9
 ## 使用技術
 ### フロントエンド
   - TypeScript
-  - Next.js(Page Router)
+  - Next.js
     - 主要ライブラリ ([選定理由](#選定理由)で解説)
       - Yamada UI、shadcn/ui、React Hook Form、React-Draggable、Axios、Prettier、ESLint、Lefthook
 ### バックエンド
