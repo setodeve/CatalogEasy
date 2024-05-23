@@ -28,7 +28,7 @@ https://qiita.com/keiswe/items/fa59444fdaac3f1be1b9
 ### バックエンド
   - Ruby on Rails
     - 主要gem ([選定理由](#選定理由)で解説)
-      - devise_token_auth、rubocop、bycrypt、rack-cors
+      - devise_token_auth、rubocop、rack-cors
   - Nginx
 ### インフラ
   - AWS ([選定理由](#選定理由)で解説)
@@ -82,8 +82,6 @@ https://qiita.com/keiswe/items/fa59444fdaac3f1be1b9
 ### 主要gem(バックエンド)
   - devise_token_auth
     - 小規模アプリで、ユーザー認証が容易であるトークン認証を採用。
-  - bycrypt
-    - クライアント側でURLを暗号化させるため
   - rack-cors
     - APIの呼び出し時のCORS対応のため
   - rubocop
