@@ -120,6 +120,7 @@ erDiagram
         datetime updated_at
     }
 
+
     PRODUCTS {
         bigint id PK "Primary Key"
         string name
@@ -174,6 +175,26 @@ erDiagram
         datetime updated_at
     }
 
+    ACTIVE_STORAGE_BLOBS {
+        bigint id PK "Primary Key"
+        string key
+        string filename
+        string content_type
+        bigint metadata
+        bigint byte_size
+        string checksum
+        datetime created_at
+    }
+
+    ACTIVE_STORAGE_ATTACHMENTS {
+        bigint id PK "Primary Key"
+        string name
+        bigint record_id FK
+        string record_type
+        bigint blob_id FK
+        datetime created_at
+    }
+
     USERS ||--o{ PRODUCTS : "has many"
     USERS ||--o{ CATALOGS : "has many"
     USERS ||--o{ PRODUCT_IMAGES : "has many"
@@ -182,6 +203,9 @@ erDiagram
     PRODUCTS ||--o{ CATALOG_SECTIONS : "has many"
     PRODUCTS ||--o{ IMAGE_ASSIGNMENTS : "has many"
     PRODUCT_IMAGES ||--o{ IMAGE_ASSIGNMENTS : "has many"
+    PRODUCT_IMAGES ||--o{ ACTIVE_STORAGE_ATTACHMENTS : "has many"
+    ACTIVE_STORAGE_BLOBS ||--o{ ACTIVE_STORAGE_ATTACHMENTS : "has many"
+
 ```
 
 
