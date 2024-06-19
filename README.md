@@ -24,7 +24,7 @@ https://qiita.com/keiswe/items/fa59444fdaac3f1be1b9
   - TypeScript
   - Next.js
     - 主要ライブラリ ([選定理由](#選定理由)で解説)
-      - Yamada UI、shadcn/ui、React Hook Form、React-Draggable、Axios、Prettier、ESLint、Lefthook
+      - Yamada UI、shadcn/ui、React Hook Form、React-DnD、Axios、Prettier、ESLint、Lefthook
 ### バックエンド
   - Ruby on Rails
     - 主要gem ([選定理由](#選定理由)で解説)
@@ -70,7 +70,7 @@ https://qiita.com/keiswe/items/fa59444fdaac3f1be1b9
     - シンプルなUIを実現できるため
   - React Hook Form
     - 動的なフォームのバリデーションとフォームの状態管理を簡単に実装できるため
-  - React-Draggable
+  - React-DnD
     - ドラッグ&ドロップ機能を簡単に実装できるため
   - Axios
     - リクエスト前の前処理が簡単にできるため
