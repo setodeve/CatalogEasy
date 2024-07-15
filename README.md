@@ -9,7 +9,7 @@
 <img src="./documents/design/top.png" width="70%"></img>
 
 ## オリジナルプロダクトの URL 
-https://app.catalog-easy.com
+非公開中
 
 * 右上の「Guestでログイン」からゲストユーザーとしてサービスをお試しいただけます。
 * AM 1:00 ~ AM8:00(JST)はサービス停止しています。
